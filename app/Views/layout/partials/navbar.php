@@ -7,13 +7,16 @@
          <div class="collapse navbar-collapse" id="collapsibleNavId">
              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                  <li class="nav-item">
-                     <a class="nav-link active" href="<?= base_url('pages') ?>">Home</a>
+                     <a class="nav-link" href="<?= base_url('pages') ?>">Home</a>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link active" href="<?= base_url('pages/about') ?>">About</a>
+                     <a class="nav-link" href="<?= base_url('pages/about') ?>">About</a>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link active" href="<?= base_url('pages/contact') ?>">Contact</a>
+                     <a class="nav-link" href="<?= base_url('pages/contact') ?>">Contact</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="<?= base_url('anime') ?>">Anime</a>
                  </li>
 
              </ul>
