@@ -23,3 +23,6 @@ $routes->get('/pages/about', 'Pages::about');
 $routes->get('/pages/contact', 'Pages::contact');
 
 $routes->get('/anime', 'Anime::index');
+$routes->get('/anime/detail/(:segment)', 'Anime::detail/$1');
+$routes->get('/anime/create', 'Anime::create');
+$routes->post('/anime/save', 'Anime::save');
