@@ -8,16 +8,30 @@ class Pages extends BaseController
     {
         $data['judul'] = 'Ini Home';
         $data['angka'] = ['satu', 'dua', 'tiga'];
-        echo view('layout/header', $data);
-        echo view('pages/home');
-        echo view('layout/footer');
+        return view('pages/home', $data);
         // echo "Hello world";
     }
     public function about()
     {
         $data['judul'] = 'Ini About';
-        echo view('layout/header', $data);
-        echo view('pages/about');
-        echo view('layout/footer');
+        return view('pages/about', $data);
+    }
+    public function contact()
+    {
+        $data['judul'] = 'Ini Contact';
+        $data['alamats'] = [
+            [
+                'tipe' => 'Rumah',
+                'alamat' => 'Jl binjai',
+                'kota' => 'Binjai',
+            ],
+            [
+                'tipe' => 'Kantor',
+                'alamat' => 'Jl Medan',
+                'kota' => 'medan',
+            ]
+        ];
+
+        return view('pages/contact', $data);
     }
 }

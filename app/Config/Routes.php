@@ -20,3 +20,4 @@ $routes->add('/function', function () {
 
 $routes->get('/pages', 'Pages::index');
 $routes->get('/pages/about', 'Pages::about');
+$routes->get('/pages/contact', 'Pages::contact');
