@@ -23,6 +23,10 @@ $routes->get('/pages/about', 'Pages::about');
 $routes->get('/pages/contact', 'Pages::contact');
 
 $routes->get('/anime', 'Anime::index');
-$routes->get('/anime/detail/(:segment)', 'Anime::detail/$1');
+$routes->get('/anime/detail/(:any)', 'Anime::detail/$1');
+$routes->get('/anime/edit/(:any)', 'Anime::edit/$1');
 $routes->get('/anime/create', 'Anime::create');
 $routes->post('/anime/save', 'Anime::save');
+$routes->post('/anime/update/(:num)', 'Anime::update/$1');
+// $routes->get('/anime/hapus', 'Anime::hapus');
+$routes->delete('/anime/(:num)', 'Anime::hapus/$1');
